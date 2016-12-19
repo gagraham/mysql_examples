@@ -1,0 +1,15 @@
+Field,Type,Null,Key,Default,Extra
+id,"int(11) unsigned",NO,PRI,NULL,auto_increment
+first_name,varchar(14),NO,,NULL,
+last_name,varchar(16),NO,,NULL,
+email,varchar(100),NO,MUL,,
+gender,"enum('M','F')",NO,,NULL,
+birth_date,date,NO,,NULL,
+personal_code,varchar(20),NO,UNI,,
+insert_dt,datetime,NO,,NULL,
+insert_user_id,int(11),NO,,-1,
+insert_process_code,varchar(255),YES,,NULL,
+update_dt,timestamp,NO,,CURRENT_TIMESTAMP,"on update CURRENT_TIMESTAMP"
+update_user_id,int(11),NO,,-1,
+update_process_code,varchar(255),YES,,NULL,
+deleted_flag,tinyint(4),NO,,0,
