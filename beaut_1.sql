@@ -12,7 +12,8 @@ FROM
         sample_staff.department_employee_rel 
     WHERE 1=1 
        AND  department_employee_rel.deleted_flag = 0
-    GROUP BY department_employee_rel.employee_id) department_employee_rel_max ON 1=1 
+    GROUP BY department_employee_rel.employee_id
+    ) department_employee_rel_max ON 1=1 
 	AND department_employee_rel_max.employee_id = employee.id
     
         INNER JOIN department_employee_rel ON 1=1 
