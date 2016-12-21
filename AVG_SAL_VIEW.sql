@@ -26,4 +26,4 @@ GROUP BY monthly, yearly,dept_id
 
 AND department.id = tmp1.dept_id 
 ORDER BY tmp1.monthly,tmp1.yearly,dept_name 
-LIMIT 100;
+LIMIT 110;
