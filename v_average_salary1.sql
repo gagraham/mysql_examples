@@ -1,4 +1,4 @@
-
+-- always drop view first
 DROP VIEW  IF EXISTS v_average_salary;
 
 CREATE VIEW v_average_salary AS
